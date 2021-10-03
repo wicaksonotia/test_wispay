@@ -1,0 +1,15 @@
+<p>Berikut ini adalah produk yang baru saja Anda tambahkan:</p>
+<ol>
+    <li>Nama Produk: <%= @product.name %></li>
+    <li>Harga: <%= @product.price %></li>
+    <li>Kategori: <%= @product.category %></li>
+    <li>Gambar Produk (preview di email 100px X auto)</li>
+    <li>
+    Status Aktif: 
+    <% if @product.is_active == true %>
+    Aktif
+    <% else %>
+    Tidak Aktif
+    <% end %>
+    </li>
+</ol>
